@@ -15,7 +15,7 @@ The plan:
 								->Edit in Visual Studio
                 
 ## Install your runtime environment ##               
-You can install Node from this link. 
+You can install Node from this [link](https://nodejs.org/en/).
 
 This will launch a Windows MSI installer to place the application on your PC. 
 
@@ -129,5 +129,97 @@ Jest uses a concept called "matchers" to allow values to be checked in different
 In the checking code, we have included the expression toBe() 
 => this is the only matcher used.
 
+
+## Matchers (a refrence to come back to) ##
+	toBe compares strict equality, using ===
+
+
+	toEqual compares the values of two variables. If it’s an object or array, it checks the equality of all the properties or elements
+
+
+	toBeNull is true when passing a null value
+
+
+	toBeDefined is true when passing a defined value (opposite to the above)
+
+
+	toBeUndefined is true when passing an undefined value
+
+
+	toBeCloseTo is used to compare floating values, avoiding rounding errors
+
+
+	toBeTruthy true if the value is considered true (like an if does)
+	
+	toBeFalsy true if the value is considered false (like an if does)
+
+
+	toBeGreaterThan true if the result of expect() is higher than the argument
+
+
+	toBeGreaterThanOrEqual true if the result of expect() is equal to the argument, or higher than the argument
+
+
+	toBeLessThan true if the result of expect() is lower than the argument
+
+
+	toBeLessThanOrEqual true if the result of expect() is equal to the argument, or lower than the argument
+
+
+	toMatch is used to compare strings with regular expression pattern matching
+	
+	toContain is used in arrays, true if the expected array contains the argument in its elements set
+
+
+	toHaveLength(number): checks the length of an array
+
+
+	toHaveProperty(key, value): checks if an object has a property, and optionally checks its value
+
+
+	toThrow checks if a function you pass throws an exception (in general) or a specific exception
+
+
+	toBeInstanceOf(): checks if an object is an instance of a class
+	
+	
+## Negative matchers ##
+All the previous examples of matchers can be negated using .not. inside the statement.
+Taking the code from our maths.test as an example:
+Change the answers so they are “wrong” and then change the .tobe to .not.tobe
+Save the file as neg.maths.tests and run the test runner again
+
+	const { sum, mul, sub, div } = require('./maths')
+
+	test('Adding 1 + 1 equals 2', () => {
+	  expect(sum(1, 1)).toBe(2)
+	})
+	test('Multiplying 1 * 1 equals 1', () => {
+	  expect(mul(1, 1)).toBe(1)
+	})
+	test('Subtracting 1 - 1 equals 0', () => {
+	  expect(sub(1, 1)).toBe(0)
+	})
+	test('Dividing 1 / 1 equals 1', () => {
+	  expect(div(1, 1)).toBe(1)
+	})
+	
+	const { sum, mul, sub, div } = require('./maths')
+
+	test('Adding 1 + 1 does not equal 0', () => {
+	  expect(sum(1, 1)).not.toBe(0)
+	})
+	test('Multiplying 1 * 1 does not equal 21', () => {
+	  expect(mul(1, 1)).not.toBe(21)
+	})
+	test('Subtracting 1 - 1 does not equal 20', () => {
+	  expect(sub(1, 1)).not.toBe(20)
+	})
+	test('Dividing 1 / 1 does not equal 13', () => {
+	  expect(div(1, 1)).not.toBe(13)
+	})
+
+
+	
 
 
