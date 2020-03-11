@@ -1,5 +1,6 @@
-->Build a dev env - node modules {Node, NPM, Jest}
+# Build a dev env - node modules {Node, NPM, Jest} #
 
+The plan:
 	->Build a small feature - a maths app
 
 			-> Build a test file using matchers running positive tests
@@ -12,7 +13,7 @@
 
 								->Edit in Visual Studio
                 
-##Install your runtime environment##               
+## Install your runtime environment ##               
 You can install Node from this link. 
 
 This will launch a Windows MSI installer to place the application on your PC. 
