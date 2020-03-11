@@ -70,4 +70,64 @@ Open up package.json and configure the script named "test" for running Jest:
 	  },
 
 
+## Tests Folder ##
+By default Jest expects to find test files in a folder called tests in your project folder. 
+So create this new folder using the mkdir command from the command window:
+
+
+## Basic maths app ##
+Open a new file in Notepad++
+Paste in your maths app code:
+
+	const sum = (a, b) => a + b
+	const mul = (a, b) => a * b
+	const sub = (a, b) => a - b
+	const div = (a, b) => a / b
+	
+	module.exports = { sum, mul, sub, div }
+
+Save the file as a JS file with the name ‘maths.js’
+
+## Create a test file ##
+Save the test code to a new file in the same folder as maths.js. 
+Call it ‘maths.test.js’ / type: .js file
+
+	const { sum, mul, sub, div } = require('./maths')
+
+	test('Adding 1 + 1 equals 2', () => {
+	  expect(sum(1, 1)).toBe(2)
+	})
+	test('Multiplying 1 * 1 equals 1', () => {
+	  expect(mul(1, 1)).toBe(1)
+	})
+	test('Subtracting 1 - 1 equals 0', () => {
+	  expect(sub(1, 1)).toBe(0)
+	})
+	test('Dividing 1 / 1 equals 1', () => {
+	  expect(div(1, 1)).toBe(1)
+	})
+	
+
+## Run the tests (again) ##
+npm test 
+
+The outcome should be a bit greener compared to your 1st run
+
+These are basic unit tests for your maths app
+
+
+## Matchers ##
+
+	const { sum, mul, sub, div } = require('./maths')
+
+	test('Adding 1 + 1 equals 2', () => {
+	  expect(sum(1, 1)).toBe(2)
+	})
+Jest uses a concept called "matchers" to allow values to be checked in different ways. 
+
+
+In the checking code, we have included the expression toBe() 
+=> this is the only matcher used.
+
+
 
