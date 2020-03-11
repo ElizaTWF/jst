@@ -1,6 +1,7 @@
 # Build a dev env - node modules {Node, NPM, Jest} #
 
 The plan:
+	
 	->Build a small feature - a maths app
 
 			-> Build a test file using matchers running positive tests
