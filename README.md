@@ -227,7 +227,7 @@ Save the file as neg.maths.tests and run the test runner again
 ## Read all the things ##
 [Matchers - the full list: Expect API doc](https://jestjs.io/docs/en/expect)
 
-[Testing JS with Jest](Testing JS with Jest)
+[Testing JS with Jest](https://flaviocopes.com/jest/)
 
 [Using-matchers](https://jestjs.io/docs/en/using-matchers)
 
