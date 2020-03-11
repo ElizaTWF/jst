@@ -189,6 +189,8 @@ Taking the code from our maths.test as an example:
 Change the answers so they are “wrong” and then change the .tobe to .not.tobe
 Save the file as neg.maths.tests and run the test runner again
 
+* Compare *
+
 	const { sum, mul, sub, div } = require('./maths')
 
 	test('Adding 1 + 1 equals 2', () => {
@@ -203,6 +205,8 @@ Save the file as neg.maths.tests and run the test runner again
 	test('Dividing 1 / 1 equals 1', () => {
 	  expect(div(1, 1)).toBe(1)
 	})
+
+	* To *
 	
 	const { sum, mul, sub, div } = require('./maths')
 
@@ -220,6 +224,18 @@ Save the file as neg.maths.tests and run the test runner again
 	})
 
 
-	
+## Read all the things ##
+[Matchers - the full list: Expect API doc](https://jestjs.io/docs/en/expect)
+
+[Testing JS with Jest](Testing JS with Jest)
+
+[Using-matchers](https://jestjs.io/docs/en/using-matchers)
+
+[Jest tutorial](https://www.valentinog.com/blog/jest/)
+
+[Thoughts-on-jest-snapshots](https://blog.scottlogic.com/2017/09/01/thoughts-on-jest-snapshots.html)
+
+[Evaluating-redux-saga-test-libraries](https://blog.scottlogic.com/2018/01/16/evaluating-redux-saga-test-libraries.html)
+
 
 
