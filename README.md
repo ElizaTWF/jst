@@ -50,4 +50,24 @@ npm install --save-dev jest
 
 The install runs over port 8888 (the same as Fiddler) so you can only run one or the other at a time
 
+## Run a failing test ##
+This shows that NPM will use Jest as your test runner.
+
+npm test
+
+The test runner will run (and fail as there are no tests written yet - obvs) 
+
+This at least shows Jest is installed and NPM recognises it
+
+
+## Running tests ##
+Configure an NPM script for running the tests from the command line. 
+
+Open up package.json and configure the script named "test" for running Jest:
+
+	"scripts": {
+	    "test": "jest"
+	  },
+
+
 
