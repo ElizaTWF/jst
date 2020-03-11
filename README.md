@@ -41,3 +41,13 @@ C:\Windows\System32\cmd.exe /K "cd C:\dev\jst"
 
 When opening the prompt, remember to do it as an admin so you can carry out actions like installation and updating applications.
 
+## Install Jest from the command line ##
+From a command prompt inside the jst folder -
+
+npm install --save-dev jest
+
+(This will take a while if you are doing it for the 1st time)
+
+The install runs over port 8888 (the same as Fiddler) so you can only run one or the other at a time
+
+
