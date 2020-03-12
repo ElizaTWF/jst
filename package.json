@@ -1,13 +1,13 @@
 {
   "name": "jst",
   "version": "1.0.0",
-  "description": "",
+  "description": "Part of a tutorial to build a test harness with Jest",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "ElizaFx",
   "license": "ISC",
   "devDependencies": {
     "jest": "^25.1.0"
