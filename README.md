@@ -131,7 +131,7 @@ In the checking code, we have included the expression toBe()
 
 
 ## Matchers (a refrence to come back to) ##
-	toBe compares strict equality, using ===
+	_toBe_ compares strict equality, using ===
 
 
 	toEqual compares the values of two variables. If it’s an object or array, it checks the equality of all the properties or elements
