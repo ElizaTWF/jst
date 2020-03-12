@@ -12,3 +12,6 @@ test('Subtracting 1 - 1 equals 0', () => {
 test('Dividing 1 / 1 equals 1', () => {
   expect(div(1, 1)).toBe(1)
 })
+test('Adding 2 + 2 equals 4', () => {
+  expect(sum(2, 2)).toBe(4)
+})
