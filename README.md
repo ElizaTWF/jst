@@ -189,7 +189,7 @@ Taking the code from our maths.test as an example:
 Change the answers so they are “wrong” and then change the .tobe to .not.tobe
 Save the file as neg.maths.tests and run the test runner again
 
-* Compare *
+_Compare_
 
 	const { sum, mul, sub, div } = require('./maths')
 
@@ -206,7 +206,7 @@ Save the file as neg.maths.tests and run the test runner again
 	  expect(div(1, 1)).toBe(1)
 	})
 
-	* To *
+_To_ 
 	
 	const { sum, mul, sub, div } = require('./maths')
 
