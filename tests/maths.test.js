@@ -1,17 +1,24 @@
 const { sum, mul, sub, div } = require('./maths')
 
+beforeEach(() => console.log('This is a happy path test')
+)
+
 test('Adding 1 + 1 equals 2', () => {
   expect(sum(1, 1)).toBe(2)
 })
+
 test('Multiplying 1 * 1 equals 1', () => {
   expect(mul(1, 1)).toBe(1)
 })
+
 test('Subtracting 1 - 1 equals 0', () => {
   expect(sub(1, 1)).toBe(0)
 })
+
 test('Dividing 1 / 1 equals 1', () => {
   expect(div(1, 1)).toBe(1)
 })
+
 test('Adding 2 + 2 equals 4', () => {
   expect(sum(2, 2)).toBe(4)
 })
