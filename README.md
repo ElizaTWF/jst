@@ -32,7 +32,7 @@ From a command prompt inside the jst folder, initialise the dev folder:
   
 (The ‘-y’ switch means the initialisation defaults are accepted so you don’t have to provide all the information indicated by the “ “ as the application folders are being created)
 
-## Add a command shortcut ## (optional)
+## Add a command shortcut (optional) ##
 Create a CMD shortcut in the jst folder:
 
 Right-click in folder. ‘New’->’Shortcut’ -> follow the wizard
